@@ -20,8 +20,8 @@ public class LoginAPIListener extends CallbackManager {
 
     }
 
-    public void doLogin(String arn,String grantType,String password) {
-        Call<LoginResponse> call = mLoginAPI.doLogin(arn, grantType, password);
+    public void doLogin(String userId,String password) {
+        Call<LoginResponse> call = mLoginAPI.doLogin(userId, password);
         call.enqueue(this);
     }
 

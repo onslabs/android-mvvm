@@ -11,5 +11,5 @@ public interface ILoginAPI {
 
     @FormUrlEncoded
     @POST("v1/oauth/token")
-    Call<LoginResponse> doLogin(@Field("username") String arnCode, @Field("grant_type") String grant_type, @Field("password") String password);
+    Call<LoginResponse> doLogin(@Field("username") String arnCode, @Field("password") String password);
 }

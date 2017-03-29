@@ -32,13 +32,11 @@ public abstract class CallbackManager<T extends BaseResponse> implements Callbac
     }
 
     private void initHeaders() {
-        mRequestHeaderMap.put("app-type", "M");
         mRequestHeaderMap.put("Content-Type", "application/json");
         mRequestHeaderMap.put("Authorization", Constants.BASIC_AUTHORIZATION);
     }
 
     private void updateHeaders() {
-        mRequestHeaderMap.put("app-type", "M");
         mRequestHeaderMap.put("Content-Type", "application/json");
         mRequestHeaderMap.put("Authorization", Constants.APP_AUTHORIZATION);
     }

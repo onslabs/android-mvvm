@@ -31,4 +31,8 @@ public class BaseViewModel {
             mOnProgressListener.showMessage("Unexpected error...try after sometime.");
         }
     }
+
+    public void setOnProgressListener(OnProgressListener onProgressListener) {
+        mOnProgressListener = onProgressListener;
+    }
 }

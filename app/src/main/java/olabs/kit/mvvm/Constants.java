@@ -5,9 +5,9 @@ package olabs.kit.mvvm;
  */
 
 public class Constants {
-    public static final String BASE_URL = "http://hdfc-dev-kong.tothenew.com/authorization/";
+    public static final String BASE_URL = "http://www.baseurl.com";
     public static boolean IS_HEADER_UPDATE = false;
-    public static String BASIC_AUTHORIZATION = "Basic ZGlzdHJpYnV0b3ItY2xpZW50OnNlY3JldA==";
-    public static String APP_AUTHORIZATION = "Basic ZGlzdHJpYnV0b3ItY2xpZW50OnNlY3JldA==";
+    public static String BASIC_AUTHORIZATION = "Basic XXXXXXXXXXXXXXXXXXXXXX==";
+    public static String APP_AUTHORIZATION = "Basic XXXXXXXXXXXXXXXXXXXXXXXX==";
     public static final String APP_PREFERENCE = "HDFC";
 }
