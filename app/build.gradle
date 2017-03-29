@@ -24,7 +24,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile files('libs/rxnetwork.jar')
+    compile files('libs/networx.jar')
     Map<String, String> dependencies = rootProject.ext.dependencies;
     compile dependencies.appCompat
     compile dependencies.design

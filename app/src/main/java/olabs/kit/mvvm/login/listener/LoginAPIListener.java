@@ -4,9 +4,8 @@ import olabs.kit.mvvm.CallbackManager;
 import olabs.kit.mvvm.login.API.ILoginAPI;
 import olabs.kit.mvvm.login.LoginViewModel;
 import olabs.kit.mvvm.login.model.LoginResponse;
-import olabs.network.rxnetwork.RetroError;
+import onslabs.kit.networx.RetroError;
 import retrofit2.Call;
-import retrofit2.Response;
 
 /**
  * Created by ttnd on 27/2/17.

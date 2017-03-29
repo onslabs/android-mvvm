@@ -1,6 +1,7 @@
 package olabs.kit.mvvm;
 
-import olabs.network.rxnetwork.RetroError;
+
+import onslabs.kit.networx.RetroError;
 
 /**
  * Created by ttnd on 27/2/17.
