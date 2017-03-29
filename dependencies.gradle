@@ -1,0 +1,12 @@
+ext {
+    supportLibraryVersion = '25.0.1'
+    retrofitVersion = '2.1.0'
+    dependencies = [
+            appCompat            : "com.android.support:appcompat-v7:$supportLibraryVersion",
+            design               : "com.android.support:design:$supportLibraryVersion",
+            rxAndroid            : 'io.reactivex:rxandroid:1.1.0',
+            retrofit             : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitConverterGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitAdapterRxJava: "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion",
+    ]
+}
