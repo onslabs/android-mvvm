@@ -9,5 +9,5 @@ public class Constants {
     public static boolean IS_HEADER_UPDATE = false;
     public static String BASIC_AUTHORIZATION = "Basic XXXXXXXXXXXXXXXXXXXXXX==";
     public static String APP_AUTHORIZATION = "Basic XXXXXXXXXXXXXXXXXXXXXXXX==";
-    public static final String APP_PREFERENCE = "HDFC";
+    public static final String APP_PREFERENCE = "MVVM";
 }
