@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class BaseApplication extends Application {
-    private SessionTimeoutListener sessionTimeoutListener;
+    private OnSessionTimeoutListener onSessionTimeoutListener;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -30,14 +30,14 @@ public class BaseApplication extends Application {
     }
 
     public void onSessionTimeout(String errorMessage){
-        sessionTimeoutListener.onSessionTimeout(errorMessage);
+        onSessionTimeoutListener.onSessionTimeout(errorMessage);
     }
 
-    public void setSessionTimeoutListener(SessionTimeoutListener sessionTimeoutListener) {
-        this.sessionTimeoutListener = sessionTimeoutListener;
+    public void setOnSessionTimeoutListener(OnSessionTimeoutListener onSessionTimeoutListener) {
+        this.onSessionTimeoutListener = onSessionTimeoutListener;
     }
 
-    public SessionTimeoutListener getSessionTimeoutListener() {
-        return  this.sessionTimeoutListener;
+    public OnSessionTimeoutListener getOnSessionTimeoutListener() {
+        return  this.onSessionTimeoutListener;
     }
 }

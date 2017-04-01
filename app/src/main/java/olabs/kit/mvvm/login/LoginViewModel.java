@@ -15,12 +15,12 @@ public class LoginViewModel extends BaseViewModel {
     private LoginAPIListener mLoginAPIListener;
 
     public LoginViewModel(ILoginView loginView){
+        super(loginView);
         mLoginView = loginView;
         mLoginAPIListener = new LoginAPIListener(this);
     }
 
     public void onLogin(String userId,String password){
-        mOnProgressListener.showProgress();
         mLoginAPIListener.doLogin(userId,password);
 
     }
@@ -30,12 +30,6 @@ public class LoginViewModel extends BaseViewModel {
     }
 
     public void onLoginSuccess(LoginResponse loginResponse) {
-        mOnProgressListener.hideProgress();
         mLoginView.showMessage(loginResponse.getMessage());
-    }
-
-    public void onError(String errorMessage) {
-        mOnProgressListener.hideProgress();
-        mLoginView.showMessage(errorMessage);
     }
 }

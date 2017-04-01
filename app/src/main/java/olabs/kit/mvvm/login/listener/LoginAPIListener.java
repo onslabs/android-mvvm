@@ -35,6 +35,6 @@ public class LoginAPIListener extends CallbackManager {
 
     @Override
     protected void onError(RetroError retroError) {
-        mLoginViewModel.onError(retroError.getErrorMessage());
+        mLoginViewModel.onError(retroError);
     }
 }

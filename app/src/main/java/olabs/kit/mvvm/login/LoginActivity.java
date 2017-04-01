@@ -19,7 +19,6 @@ public class LoginActivity extends BaseActivity<LoginViewModel,ActivityLoginBind
         super.onCreate(savedInstanceState);
         mViewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_login);
         mViewModel = new LoginViewModel(this);
-        mViewModel.setOnProgressListener(this);
         mViewDataBinding.setViewmodel(mViewModel);
     }
 

@@ -10,6 +10,4 @@ public interface OnProgressListener {
 
     void hideProgress();
 
-    void showMessage(String message);
-
 }

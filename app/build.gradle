@@ -28,10 +28,8 @@ dependencies {
     Map<String, String> dependencies = rootProject.ext.dependencies;
     compile dependencies.appCompat
     compile dependencies.design
-    compile dependencies.rxAndroid
     compile dependencies.retrofit
     compile dependencies.retrofitConverterGson
-    compile dependencies.retrofitAdapterRxJava
     compile('com.squareup.okhttp3:logging-interceptor:3.4.1') {
         exclude module: 'okhttp3'
     }
